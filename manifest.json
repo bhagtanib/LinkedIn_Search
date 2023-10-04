@@ -1,0 +1,16 @@
+{
+    "manifest_version" : 3,
+    "name" : "Seach Help",
+    "version" : "0.0.1",
+    "permissions": [
+        "tabs"
+      ],
+    "content_scripts": [
+        {
+            "matches": ["https://*.linkedin.com/search/results/people*"],
+            "run_at": "document_idle",
+            "js" :[ "search.js"]
+        }
+    ]
+   
+}
